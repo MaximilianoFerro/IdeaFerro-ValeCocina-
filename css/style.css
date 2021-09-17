@@ -6,7 +6,7 @@
 }
 
 html {
-    background-image: url(/multimedios/Logo\ B&N.png);
+    background-image: url(../multimedios/Logo\ B&N.png);
     color: #534B52;
     font-family: 'Atma', cursive;
 }
@@ -29,7 +29,7 @@ header {
     height: 100px;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/multimedios/bannerCocina.svg);
+    background-image: url(../multimedios/bannerCocina.svg);
     background-size: 35%;
 }
 
@@ -167,7 +167,7 @@ footer{
     grid-area: footer;
 }
 .footer {
-    background-image: url(/multimedios/bannerCocina.svg);
+    background-image: url(../multimedios/bannerCocina.svg);
     background-size: 20%;
     color: #F3F2E0;
     background-color: #534B52;
