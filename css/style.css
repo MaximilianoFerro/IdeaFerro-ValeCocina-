@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-html {
-    background-image: url(../multimedios/Logo\ B&N.png);
-    color: #534B52;
-    font-family: 'Atma', cursive;
-}
 /* GRILLA QUE ESTRUCTURA TODO EL BODY */
 .divBody{
     display: grid;
@@ -19,10 +14,12 @@ html {
     "footer footer footer";
     align-content: space-between;
     height: 100vh;
+    color: #534B52;
+    font-family: 'Atma', cursive;
 
 }
 /* header */
-header {
+.headerArea {
     grid-area: header;
     display: flex;
     background-color: #534B52;
@@ -33,7 +30,7 @@ header {
     background-size: 35%;
 }
 
-header div { /* div que contiene la imagen del logo */
+.headerArea div { /* div que contiene la imagen del logo */
     display: inline-flex;
     background-color: #534B52;
     margin:0;
@@ -50,14 +47,14 @@ header div { /* div que contiene la imagen del logo */
     top: 6px; 
 }
 
-nav ul{
+.ulM{
     display: flex;
     padding: 0px;
     margin-right: 10px;
     background-color:  #534B52;
 }
 
-nav ul li {
+.ulM li {
     position:relative;
     border: solid 1px #80CEC4;
   
@@ -100,7 +97,7 @@ nav ul li {
     display: block;
 }
 
-a {
+.aM {
       color: #F3F2E0; 
       text-decoration: none; 
       font-size: 30px;
@@ -117,8 +114,9 @@ a:hover {
 
 }
 /* main */
-main {
+.mainArea {
     grid-area: main;
+    background-image: url(../multimedios/Logo\ B&N.png);
 }
 .indexSection{
     display: flex;
@@ -126,17 +124,17 @@ main {
     text-align: center;
 }
 
-h1 {
+.h1M {
     font-family: 'Alice', serif;
     position: relative; 
     font-size: 120px;
 }
 
-h2{
+.h2M{
     font-size: 80px;
 }
 
-h3 {
+.h3M {
     font-size: 50px;
     padding: 0;
     border: 0px;
@@ -163,10 +161,10 @@ h3 {
 }
 
 /* footer */
-footer{
+.footerArea{
     grid-area: footer;
 }
-.footer {
+.footerDiv {
     background-image: url(../multimedios/bannerCocina.svg);
     background-size: 20%;
     color: #F3F2E0;
@@ -177,7 +175,7 @@ footer{
     height: 50px;
 }
 
- .footerTxt{
+.footerTxt p{
     font-size: 30px;
 
 }
