@@ -41,7 +41,9 @@
 .navbar-light .navbar-toggler{
     color: #F3F2E0;
     margin-bottom: 0.2rem;
-    
+    border-color: #F3F2E0;
+    border-width: 2px;
+
 }
 .dropdown-menu{
     background-color: #534B52;
@@ -68,10 +70,12 @@
 }
 /* TERMINA HEADER Y MODS DEL NAV */
 
+
+
 .h1M{
     font-family: 'Alice', serif;
     position: relative; 
-    font-size: 7.5rem;
+    font-size: 7rem;
     text-align: center;
     font-weight: 600;
 }
@@ -103,4 +107,17 @@
 
 .footerArea {
     display: flex;
+ 
     background-color: #534B52;
+}
+
+/* .footerDiv{
+    flex-direction: column;
+    align-content: space-between;
+} */
+.text-muted{
+   color:  #F3F2E0 !important;
+   text-decoration: underline;
+}
+
+
