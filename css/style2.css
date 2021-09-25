@@ -50,6 +50,7 @@
     border: 1px #F3F2E0;
     z-index: 1;
     text-align: center;
+    z-index: 1000;
 }
 .aNav{
     font-size: 1.5rem;
