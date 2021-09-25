@@ -11,7 +11,7 @@
     color: #534B52;
     font-family: 'Atma', cursive; 
     background-image: url(../multimedios/Logo\ B&N.png);
-   /*  font-weight: 600; */
+
 }
 /* Comienza el header */
 .headerArea {
@@ -28,7 +28,7 @@
     justify-content: flex-end;
 }
 
-.navbar-light .navbar-toggler-icon {
+.navbar-light .navbar-toggler-icon { /* imagen con colores modificados del menu hamburguesa */
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(243, 242, 224)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
@@ -71,7 +71,7 @@
 /* TERMINA HEADER Y MODS DEL NAV */
 
 
-
+/* estilos de los textos h1 y h2 del main */
 .h1M{
     font-family: 'Alice', serif;
     position: relative; 
@@ -84,7 +84,7 @@
     text-align: center;
     font-weight: 600;
 }
-
+/* Animacion de pluma y estilos */
 @keyframes fadeInDown { /* fade de la pluma del index */
     0%{
         opacity: 0 ;
@@ -105,16 +105,14 @@
     animation-duration: 3s; 
 }
 
+
+/* footer */
 .footerArea {
     display: flex;
  
     background-color: #534B52;
 }
 
-/* .footerDiv{
-    flex-direction: column;
-    align-content: space-between;
-} */
 .text-muted{
    color:  #F3F2E0 !important;
    text-decoration: underline;
