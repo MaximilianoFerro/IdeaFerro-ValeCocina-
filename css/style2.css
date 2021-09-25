@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+.bodyArea{
+    color: #534B52;
+    font-family: 'Atma', cursive; 
+    background-image: url(../multimedios/Logo\ B&N.png);
+   /*  font-weight: 600; */
+}
+/* Comienza el header */
+.headerArea {
+    display: flex;
+    background-color: #534B52;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Modificaciones al navbar de bs */
+.navbar{
+    width: 1000rem;
+}
+#navbarNavDropdown{
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #F3F2E0;
+}
+.navbar-light .navbar-toggler{
+    color: #F3F2E0;
+    margin-bottom: 0.2rem;
+}
+.dropdown-menu{
+    background-color: #534B52;
+    border: 1px #F3F2E0;
+    z-index: 1;
+    text-align: center;
+}
+.aNav{
+    font-size: 1.5rem;
+    background-color: #534B52;
+    color:#F3F2E0;
+} 
+
+.logoDiv{
+    display: inline-flex;
+    background-color: #534B52;
+    width: 100px;
+}
+
+.logoHeader {
+    width: 100px;
+    position: relative;
+    top: 6px;
+}
+/* TERMINA HEADER Y MODS DEL NAV */
+
+.h1M{
+    font-family: 'Alice', serif;
+    position: relative; 
+    font-size: 7.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.h3M{
+    text-align: center;
+    font-weight: 600;
+}
+
+@keyframes fadeInDown { /* fade de la pluma del index */
+    0%{
+        opacity: 0 ;
+        transform: translate3d(0,-100%,0);
+    }
+    100%{  opacity: 0.7;
+        transform: translateZ(0);
+    }    
+}
+.plumaDiv{
+    display: flex;
+    justify-content: center;
+}
+.pluma { 
+    width: 600px;
+    padding: 0; 
+    opacity: 70%;
+    animation-name: fadeInDown;
+    animation-duration: 3s; 
+}
+
+.footerArea {
+    display: flex;
+    background-color: #534B52;

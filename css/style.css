@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +7,21 @@
 }
 
 /* GRILLA QUE ESTRUCTURA TODO EL BODY */
+.bodyArea {
+    background-image: url(../multimedios/Logo\ B&N.png);
+}
 .divBody{
-    display: grid;
+/*     display: grid;
     grid-template-areas: 
     "header header header"
     "main main main"
     "footer footer footer";
     align-content: space-between;
+    height: 100vh; */
     height: 100vh;
     color: #534B52;
     font-family: 'Atma', cursive;
+
 
 }
 /* header */
@@ -46,12 +52,15 @@
     position: relative;
     top: 6px; 
 }
-
+.navArea{
+    display: flex;
+}
 .ulM{
     display: flex;
     padding: 0px;
     margin-right: 10px;
     background-color:  #534B52;
+    margin: 0;
 }
 
 .ulM li {
@@ -116,7 +125,7 @@ a:hover {
 /* main */
 .mainArea {
     grid-area: main;
-    background-image: url(../multimedios/Logo\ B&N.png);
+
 }
 .indexSection{
     display: flex;
@@ -128,6 +137,7 @@ a:hover {
     font-family: 'Alice', serif;
     position: relative; 
     font-size: 120px;
+    font-weight: 600;
 }
 
 .h2M{
@@ -140,6 +150,7 @@ a:hover {
     border: 0px;
     margin: 0px;
     line-height: 65px;
+    font-weight: 600;
 
 }
 
@@ -177,6 +188,7 @@ a:hover {
 
 .footerTxt p{
     font-size: 30px;
+    margin: 0;
 
 }
 /* Form del contacto */
