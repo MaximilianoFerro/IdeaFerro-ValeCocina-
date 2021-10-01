@@ -1,0 +1,56 @@
+$backgroundcolor_header_footer: #534B52;
+$color_typography: #534B52;
+$color_typography_header_footer:#F3F2E0;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@import "header_nav";
+@import "footer";
+@import "animations";
+
+.body_area{
+    color: $color_typography;
+    font-family: 'Atma', cursive; 
+    background-image: url(../multimedios/LogoB&N.png);
+}
+@mixin h_text {
+    text-align: center;
+    font-weight: 600;
+    position: relative; 
+}
+    .h1_t{
+        @include h_text;
+        font-family: 'Alice', serif;
+        font-size: 7rem;
+    }
+    .h2_t{
+        @include h_text;
+    }
+    .h3_t{
+        @include h_text;
+    }
+
+.about{
+    &_img{
+        height: 50rem; 
+       text-align: center;
+    }
+    &_img img{
+        height: 100%;
+    }
+    &_p{
+        font-size: 2rem;
+        width: 100%;
+    }
+}
+
+
+
+

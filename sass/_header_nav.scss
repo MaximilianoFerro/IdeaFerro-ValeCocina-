@@ -1,0 +1,53 @@
+.header_area {
+    display: flex;
+    background-color: $backgroundcolor_header_footer;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    width: 1000rem;
+    
+    &-nav{
+        text-align: center;
+    }    
+    &-light &-nav .nav-link{
+        color: $color_typography_header_footer;
+    }
+    &-light &-toggler-icon{ /* img con colores modificados del menu hamburguesa */
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(243, 242, 224)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+    &-light &-toggler{
+        color: $color_typography;
+        margin-bottom: 0.2rem;
+        border-color: $color_typography_header_footer;
+        border-width: 2px;
+    }
+    .dropdown-menu{
+        background-color: $backgroundcolor_header_footer;
+        border: 1px $color_typography_header_footer;
+        text-align: center;
+        z-index: 1000;
+    }
+    .aNav{
+        font-size: 1.5rem;
+        background-color: $backgroundcolor_header_footer;
+        color: $color_typography_header_footer ;
+    } 
+}
+
+#navbarNavDropdown{
+    justify-content: flex-end;
+}
+
+.logo{
+    &Div{
+        display: inline-flex;
+        background-color: $backgroundcolor_header_footer;
+        width: 100px;
+    }
+    &Header{
+        width: 100px;
+        position: relative;
+        top: 6px;
+    }
+} 

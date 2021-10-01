@@ -1,0 +1,9 @@
+.footer_area {
+    display: flex;
+    background-color: $backgroundcolor_header_footer;
+}
+
+.text-muted{
+   color: $color_typography_header_footer !important;
+   text-decoration: underline;
+}
