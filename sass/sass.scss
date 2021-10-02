@@ -31,7 +31,9 @@ $color_typography_header_footer:#F3F2E0;
         font-size: 7rem;
     }
     .h2_t{
+        margin-top: 1rem;
         @include h_text;
+        
     }
     .h3_t{
         @include h_text;
@@ -40,17 +42,21 @@ $color_typography_header_footer:#F3F2E0;
 .about{
     &_img{
         height: 50rem; 
-       text-align: center;
+        text-align: end;
+      
     }
-    &_img img{
+/*     &_img img{
         height: 100%;
-    }
-    &_p{
-        font-size: 2rem;
-        width: 100%;
+    } */
+    &_txt{
+        align-self: center;
+        text-align: center;
+        width: 40rem;
     }
 }
 
-
-
-
+@media (max-width:1200px){
+    .about_img{
+        display: none;
+    }
+}

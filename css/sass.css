@@ -147,6 +147,7 @@
 }
 
 .h2_t {
+  margin-top: 1rem;
   text-align: center;
   font-weight: 600;
   position: relative;
@@ -158,17 +159,28 @@
   position: relative;
 }
 
+.about {
+  /*     &_img img{
+        height: 100%;
+    } */
+}
+
 .about_img {
   height: 50rem;
+  text-align: end;
+}
+
+.about_txt {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
+  width: 40rem;
 }
 
-.about_img img {
-  height: 100%;
-}
-
-.about_p {
-  font-size: 2rem;
-  width: 100%;
+@media (max-width: 1200px) {
+  .about_img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sass.css.map */
