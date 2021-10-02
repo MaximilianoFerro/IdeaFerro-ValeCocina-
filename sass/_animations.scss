@@ -19,3 +19,48 @@
     text-align: center;
 }
 }
+
+/* Menú */
+/* animacion salero */
+@keyframes up_and_down{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{ 
+        transform:rotate(5deg);}
+}
+.saltshaker{
+    justify-self: flex-end;
+    &_salt {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+}
+    & img{
+    width: 7rem;
+    margin-right: 2em;
+    transform-origin: 339px 226px;
+    animation: up_and_down 0.6s ease-out 4 alternate;
+    }   
+}
+/* animacion sal */
+@keyframes salt{
+    0%{opacity:0;
+        transform:translate(10px, -10px);}
+    20%{opacity:1;}
+    50%{opacity:1;}
+    100%{transform:translate(-10px, 10px);
+        opacity:0;
+    }
+}
+.salt {
+    align-content: flex-end;
+    & img {
+        width: 5em;
+        margin-right: 10em;
+        animation-delay: 2.2s;
+        animation: salt 1.25s linear -0.18s 3;
+        opacity: 0;
+    }
+}

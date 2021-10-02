@@ -32,13 +32,14 @@ $color_typography_header_footer:#F3F2E0;
     }
     .h2_t{
         margin-top: 1rem;
+        text-decoration: underline;
         @include h_text;
         
     }
     .h3_t{
         @include h_text;
     }
-
+/* imagen del about */
 .about{
     &_img{
         height: 50rem; 
@@ -51,9 +52,20 @@ $color_typography_header_footer:#F3F2E0;
         width: 40rem;
     }
 }
-
+/* mediaquerie del about para eliminar imagen en responsive */
 @media (max-width:1200px){
     .about_img{
         display: none;
     }
+}
+/* Estilos form de contacto */
+.text_label{
+    color: $color_typography;
+    font-size: 1.5rem;
+}
+
+.btn{
+    background-color: $backgroundcolor_header_footer;
+    color: $color_typography_header_footer;
+    border-color: $color_typography_header_footer;
 }
