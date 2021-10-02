@@ -159,12 +159,6 @@
   position: relative;
 }
 
-.about {
-  /*     &_img img{
-        height: 100%;
-    } */
-}
-
 .about_img {
   height: 50rem;
   text-align: end;
