@@ -5,4 +5,4 @@
 
 Entrega de index con bootstrap 25/9
 
-Paginas navegables con bootstrap y sass 2/10
+Paginas navegables con bootstrap y sass git2/10
