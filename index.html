@@ -1,70 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content=" Venta de comida casera congelada y panaderia dulce">
+    <meta name="keywords" content="comida, congelada, panaderia dulce, venta, Martin Coronado, Tres de Febrero">
+    <title>ValeCocina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/sass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap" rel="stylesheet"> 
-<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
- --></head>
-<body>
-    <div class="divBody">
-        <header >
-            <div>
-                <img class="logoHeader" src="./multimedios/LogoVaLeee.svg" alt="Logo" >
-            </div>
-            <nav>
-            
-                <ul><!-- Menu de navegacion -->
-                    <li>
-                        <a class="activo" href="./index.html">Inicio</a>
+
+</head>
+<body class="body_area d-flex flex-column h-100">  
+          <!-- Header &  nav-->
+        <header class="header_area m-0 p-0" >
+            <nav class="navStyle navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <div class="logoDiv m-0 p-0">
+                  <a class="navbar-brand" href="./index.html">
+                      <img class="logoHeader" src="./multimedios/LogoVaLeee.svg" alt="Logo" >
+                  </a>
+              </div>
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="menuHamburguesa navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="aNav nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="./pages/about.html">Acerca de mí</a>
+                    <li class="nav-item">
+                      <a class=" aNav nav-link" href="./pages/about.html">Acerca de mí</a>
                     </li>
-                    <li class="desplegable"><!-- Menu desplegable -->
-                        <a  href="./pages/menu.html">Menú</a>
-                            <ul>
-                                <li>
-                                    <a href="./pages/menu.html#menuSalado">Menú Salado</a>
-                                </li> 
-                                
-                                <li id="liMenuDulceId">
-                                    <a href="./pages/menu.html#menuDulce">Menú Dulce</a>
-                                </li>
-                            </ul>
+                    <li class="nav-item">
+                      <a class="aNav nav-link" href="./pages/gallery.html">Galeria</a>
                     </li>
-                    <li>
-                        <a href="./pages/galeria.html">Galeria</a>
+                    <li class="nav-item dropdown">
+                      <a class=" aNav nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menú </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class=" aNav dropdown-item" href="./pages/menu.html#menu_salado">Menú Salado</a></li>
+                        <li><a class=" aNav dropdown-item" href="./pages/menu.html#menu_dulde">Menú Dulce</a></li>
+                      </ul>
                     </li>
-                    <li>
-                        <a href="./pages/contacto.html">Contacto</a>
+                    <li class="nav-item">
+                      <a class="aNav nav-link" href="./pages/contact.html">Contacto</a>
                     </li>
-                </ul>
-                </nav>
-            
+                  </ul>
+                </div>
+              </div>
+            </nav>
         </header>
-        <main>
-            <section class="indexSection">
-                <h1>VaLe Cocina</h1>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit sed corporis porro quis illo iusto excepturi dignissimos, sunt quos repellendus id ducimus alias ea, expedita modi et iure aliquid!</h3>
-                <div>
-                    <img  class="pluma"  src="./multimedios/Pluma.svg" alt="Pluma">
+
+      <main>
+          <!-- Carrusel BS -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                 <img  src="./multimedios/bombones.jpg" class="d-block w-100 img-fluid" alt="bombones">
+               </div>
+             <div class="carousel-item">
+                <img  src="./multimedios/frolas.jpg" class="d-block w-100 img-fluid" alt="pastafrolas">
+             </div>
+              <div class="carousel-item">
+                <img  src="./multimedios/budines.jpg" class="d-block w-100 img-fluid" alt="budines">
+              </div>
+          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+ 
+          <!-- Contenido Main -->
+            <section class="container p-0">
+                <h1 class="m-0 h1_t">VaLe Cocina</h1>
+                <h3 class="display-6 h3_t"> Comida casera congelada, para llenar tu frezzer y tener siempre listo algo rico para cenar, y panaderia dulce para compartir con la familia y amigos.
+                  <br>Los productos se realizan a pedido, con una semana de anticipación, ya que son productos sin conservantes ni aditivos! 
+                  
+                  </h3>
+                <div class=" pluma_div">
+                    <img  class="img-fluid pluma"  src="./multimedios/Pluma.svg" alt="Pluma">
                 </div>
             </section> 
-        </main>
-        <footer>
-            <div class="footer">
-                <div class="footerTxt">
-                    <p>Social media</p>
-                </div>  
-            </div>  
-        </footer>
-    </div>  
+      </main>
+
+      <!--   <footer> -->
+        <footer class="footer_area footer mt-auto py-3 ">
+          <div class="container-fluid row align-items-baseline">
+            <div class=" col-2 w-auto m-0 p-0">
+              <span class=" text-muted ">Visita nuestras redes:</span>
+            </div>
+            <ul class="d-flex col-2">
+              <li class="py-2 d-flex align-items-center">
+            <a href="https://www.facebook.com/vale.cocinaencasa/">
+              <img class="icons_smf px-1" src="./multimedios/icons8-facebook.svg" alt="facebook">
+             </a>
+            </li>
+            <li class=" py-2 d-flex align-items-center">
+              <a href="https://www.instagram.com/vale.cocinaencasa/?utm_source=qr">
+                <img class=" icons_smf px-1" src="./multimedios/icons8-instagram.svg" alt="instagram">
+               </a>
+              </li>
+              <li class=" py-2 d-flex align-items-center">
+                <a href="https://wa.me/541130960366">
+                  <img class=" icons_smf px-1" src="./multimedios/icons8-whatsapp.svgz" alt="instagram">
+                 </a>
+                </li>
+            </ul>
+            <div class="m-0 p-0">
+              <span class=" text-muted ">Nos encontramos en la calle 17 de Agosto al 1434, Martín Coronado, partido de Tres de Febrero</span>
+            </div>
+          </div>    
+            </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

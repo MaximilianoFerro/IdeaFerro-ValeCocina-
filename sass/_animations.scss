@@ -1,0 +1,21 @@
+@keyframes fade_in_down { /* fade de la pluma del index */
+    0%{
+        opacity: 0 ;
+        transform: translate3d(0,-100%,0);
+    }
+    100%{
+        opacity: 0.7;
+        transform: translateZ(0);
+    }    
+}
+.pluma{
+    width: 600px;
+    padding: 0; 
+    opacity: 70%;
+    animation-name: fade_in_down;
+    animation-duration: 3s; 
+
+    &_div{
+    text-align: center;
+}
+}
