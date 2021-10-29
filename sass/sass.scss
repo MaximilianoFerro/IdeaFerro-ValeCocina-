@@ -39,11 +39,7 @@ $color_typography_header_footer:#F3F2E0;
     .h3_t{
         @include h_text;
     }
-    .h4_t{
-        @include h_text;
-        
-    }
-    
+ 
 /* imagen del about */
 .about{
     &_img{
@@ -75,4 +71,14 @@ $color_typography_header_footer:#F3F2E0;
     background-color: $backgroundcolor_header_footer;
     color: $color_typography_header_footer;
     border-color: $color_typography_header_footer;
+}
+
+.icons_sm {
+    width: 3rem;
+   
+}
+.p_contact{
+    color: $color_typography;
+    text-decoration: none;
+    font-size: 1.5rem;
 }

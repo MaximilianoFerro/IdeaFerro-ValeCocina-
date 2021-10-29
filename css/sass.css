@@ -160,12 +160,6 @@
   position: relative;
 }
 
-.h4_t {
-  text-align: center;
-  font-weight: 600;
-  position: relative;
-}
-
 /* imagen del about */
 .about_img {
   height: 50rem;
@@ -199,5 +193,15 @@
   background-color: #534B52;
   color: #F3F2E0;
   border-color: #F3F2E0;
+}
+
+.icons_sm {
+  width: 3rem;
+}
+
+.p_contact {
+  color: #534B52;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=sass.css.map */
