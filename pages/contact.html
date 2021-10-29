@@ -159,24 +159,26 @@
               </div>
             </div>    
               </footer>
-  
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="js/popper.min.js+bootstrap.min.js.pagespeed.jc.wIHOSAsM94.js"></script>
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script>eval(mod_pagespeed_R$PrRtBrU7);</script>
-      <script>eval(mod_pagespeed_qz_A65H3BP);</script>
-      <script src="js/jquery.validate.min.js+main.js.pagespeed.jc.7iUBwolJxI.js"></script>
-      <script>eval(mod_pagespeed_$wFW$lgDs5);</script>
-      <script>eval(mod_pagespeed_RZ32TS$lP7);</script>
-      <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;rayId&quot;:&quot;697b70cf0e7f74eb&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2021.9.0&quot;,&quot;si&quot;:100}"></script>
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--      <script>eval(mod_pagespeed_R$PrRtBrU7);</script>
+      <script>eval(mod_pagespeed_qz_A65H3BP);</script> -->
+<!--       <script type="text/javascript" src="js/jquery.validate.min.js+main.js.pagespeed.jc.7iUBwolJxI.js"></script>
+ -->   <!--    <script>eval(mod_pagespeed_$wFW$lgDs5);</script>
+      <script>eval(mod_pagespeed_RZ32TS$lP7);</script> -->
+      <script type="text/javascript" defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;rayId&quot;:&quot;697b70cf0e7f74eb&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2021.9.0&quot;,&quot;si&quot;:100}"></script>
       <script type="text/javascript">
-        $("#form_button").on("click",(e)=>{
-          e.preventDefault() 
-          let name = $("#name").text()
-          let message = $("#message").text()
-          $("#contactForm").attr("action","mailto:maximilianoeferro@gmail.com?subject=consulta de "+ name +"&body"+ message)
-          $("#contactForm").submit()
-        } )
+        $("").on("ready",()=>{
+          $("#form_button").on("click",(e)=>{
+            break
+            e.preventDefault() 
+            let name = $("#name").text()
+            let message = $("#message").text()
+            $("#contactForm").attr("action","mailto:maximilianoeferro@gmail.com?subject=consulta de "+ name +"&body"+ message)
+            $("#contactForm").submit()
+          } )
+        })
+     
       </script>
     </body>
   </html>
