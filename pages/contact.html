@@ -99,7 +99,7 @@
                   <div class="col-md-12">
                       <div class="form h-100">
                           <h4 class="display-6 ">Tambien podes dejarnos tú mensaje y a la brevedad nos estaremos comunicando!</h4>
-                          <form class="mb-5" method="" id="contactForm" name="contactForm" novalidate="novalidate">
+                          <form class="mb-5" action="mailto:maximilianoeferro@gmail.com" id="contactForm" name="contactForm" novalidate="novalidate">
                               <div class="row">
                                   <div class="col-md-6 form-group mb-3">
                                       <label for="" class="text_label col-form-label">Nombre *</label>
@@ -118,7 +118,7 @@
                                   </div>
                                   <div class="row">
                                       <div class="col-md-12 form-group">
-                                          <input type="submit" value="Enviar Mensaje" class="btn rounded-4 py-2 px-4">
+                                          <input id="form_button" type="submit" value="Enviar Mensaje" class="btn rounded-4 py-2 px-4">
                                          
                                       </div>
                                   </div>
@@ -169,6 +169,14 @@
       <script>eval(mod_pagespeed_$wFW$lgDs5);</script>
       <script>eval(mod_pagespeed_RZ32TS$lP7);</script>
       <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;rayId&quot;:&quot;697b70cf0e7f74eb&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2021.9.0&quot;,&quot;si&quot;:100}"></script>
-  
+      <script type="text/javascript">
+        $("#form_button").on("click",(e)=>{
+          e.preventDefault() 
+          let name = $("#name").text()
+          let message = $("#message").text()
+          $("#contactForm").attr("action","mailto:maximilianoeferro@gmail.com?subject=consulta de "+ name +"&body"+ message)
+          $("#contactForm").submit()
+        } )
+      </script>
     </body>
   </html>
