@@ -73,9 +73,13 @@ $color_typography_header_footer:#F3F2E0;
     border-color: $color_typography_header_footer;
 }
 
-.icons_sm {
-    width: 3rem;
-   
+.icons{
+     &_sm {
+        width: 3rem;   
+}
+    &_smf {
+        width: 2rem;
+}
 }
 .p_contact{
     color: $color_typography;
