@@ -18,7 +18,7 @@ $color_typography_header_footer:#F3F2E0;
 .body_area{
     color: $color_typography;
     font-family: 'Atma', cursive; 
-    background-image: url(../multimedios/LogoB&N.png);
+    background-image: url(../multimedios/background2.jpg);
 }
 @mixin h_text {
     text-align: center;
@@ -39,6 +39,11 @@ $color_typography_header_footer:#F3F2E0;
     .h3_t{
         @include h_text;
     }
+    .h4_t{
+        @include h_text;
+        
+    }
+    
 /* imagen del about */
 .about{
     &_img{
@@ -50,6 +55,7 @@ $color_typography_header_footer:#F3F2E0;
         align-self: center;
         text-align: center;
         width: 40rem;
+        font-weight: bold;
     }
 }
 /* mediaquerie del about para eliminar imagen en responsive */

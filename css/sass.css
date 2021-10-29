@@ -241,7 +241,7 @@
 .body_area {
   color: #534B52;
   font-family: 'Atma', cursive;
-  background-image: url(../multimedios/LogoB&N.png);
+  background-image: url(../multimedios/background2.jpg);
 }
 
 .h1_t {
@@ -266,6 +266,12 @@
   position: relative;
 }
 
+.h4_t {
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
 /* imagen del about */
 .about_img {
   height: 50rem;
@@ -278,6 +284,7 @@
       align-self: center;
   text-align: center;
   width: 40rem;
+  font-weight: bold;
 }
 
 /* mediaquerie del about para eliminar imagen en responsive */
